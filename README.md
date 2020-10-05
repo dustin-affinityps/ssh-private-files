@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Retrieve Private Files
-        uses: dustin-affinityps/ssh-private-files@master
+        uses: dustin-affinityps/ssh-private-files@main
         with:
           host: ${{ secrets.SSH_HOST }}
           port: ${{ secrets.SSH_PORT }}
