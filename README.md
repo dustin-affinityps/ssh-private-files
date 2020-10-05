@@ -37,7 +37,7 @@ jobs:
     name: Build and Deploy
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Retrieve Private Files
         uses: dustin-affinityps/ssh-private-files@master
         with:

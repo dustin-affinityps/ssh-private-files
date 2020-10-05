@@ -3,7 +3,9 @@
 # https://stackoverflow.com/questions/16886179/scp-or-sftp-copy-multiple-files-with-single-command
 
 echo -e "$INPUT_KEY" > __key
+
 chmod 700 __key
+
 scp -v -r \
     -o ConnectTimeout=15 \
     -o StrictHostKeyChecking=no \
