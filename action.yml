@@ -1,0 +1,26 @@
+name: 'SSH Private Files'
+description: 'Action to retrieve specified files from a remote host'
+author: 'Dustin Hansen'
+inputs:
+  local:
+    description: 'dir to copy remote files to'
+    required: true
+  host:
+    description: 'SSH address'
+    required: true
+  remote:
+    description: 'Remote dir path to grab files from'
+    required: true
+  port: 
+    description: 'SSH Port'
+    required: false
+    default: 22
+  user:
+    description: 'SSH User name'
+    required: true
+  key:
+    description: 'Private key'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
